@@ -4,6 +4,13 @@
 Normalize strings to search them client side.
 
 
+## Install
+
+```sh
+npm i @altipla/normalize-search
+```
+
+
 ## Usage
 
 ### Basic usage
@@ -48,8 +55,8 @@ If you want to prepare a custom search of any kind where you need the normalized
 import { normalizeSearch } from '@altipla/normalize-search'
 
 
-normalizeSearch('your text here')
-normalizeSearch([
+let result1 = normalizeSearch('your text here')
+let result2 = normalizeSearch([
   item.name,
   item.lastName,
 ])
