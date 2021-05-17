@@ -1,6 +1,6 @@
 {
   "name": "@altipla/normalize-search",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ESLint configuration for our Vue projects.",
   "main": "index.js",
   "type": "module",
