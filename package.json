@@ -1,6 +1,6 @@
 {
   "name": "@altipla/normalize-search",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Normalize strings to search them client side.",
   "main": "index.js",
   "type": "module",
