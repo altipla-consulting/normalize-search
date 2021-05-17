@@ -6,7 +6,7 @@ import diacritic from 'diacritic'
 let cache = new WeakMap();
 
 
-export function normalize(input) {
+export function normalizeSearch(input) {
   if (isArray(input)) {
     input = input.join(' ')
   }
@@ -15,7 +15,7 @@ export function normalize(input) {
 
 
 export function prepareSearch(item, search) {
-  cache.set(item, normalize(search))
+  cache.set(item, normalizeSearch(search))
 }
 
 
@@ -24,7 +24,7 @@ export function filterSearch(search) {
     return constant(true)
   }
 
-  search = normalize(search)
+  search = normalizeSearch(search)
 
   return function(item) {
     let text = cache.get(item) || ''

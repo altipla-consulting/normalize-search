@@ -1,15 +1,15 @@
 
 import test from 'ava'
 
-import { normalize, prepareSearch, filterSearch } from './index.js'
+import { normalizeSearch, prepareSearch, filterSearch } from './index.js'
 
 
 test('normalize characters', t => {
-  t.is(normalize('text áéíóú AE ÁÉ foo--bar foo1'), 'TEXT AEIOU AE AE FOO--BAR FOO1')
+  t.is(normalizeSearch('text áéíóú AE ÁÉ foo--bar foo1'), 'TEXT AEIOU AE AE FOO--BAR FOO1')
 })
 
 test('normalize arrays', t => {
-  t.is(normalize(['fóo', `bár`, `báz`]), 'FOO BAR BAZ')
+  t.is(normalizeSearch(['fóo', `bár`, `báz`]), 'FOO BAR BAZ')
 })
 
 test('prepare items and filter them', t => {
