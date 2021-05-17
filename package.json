@@ -1,7 +1,7 @@
 {
   "name": "@altipla/normalize-search",
   "version": "0.1.0",
-  "description": "ESLint configuration for our Vue projects.",
+  "description": "Normalize strings to search them client side.",
   "main": "index.js",
   "type": "module",
   "repository": {
