@@ -1,0 +1,30 @@
+{
+  "name": "@altipla/normalize-search",
+  "version": "0.0.0",
+  "description": "ESLint configuration for our Vue projects.",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altipla-consulting/normalize-search.git"
+  },
+  "author": "Altipla Consulting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/altipla-consulting/normalize-search/issues"
+  },
+  "homepage": "https://github.com/altipla-consulting/normalize-search#readme",
+  "files": [
+    "./index.js"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "diacritic": "^0.0.2",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0"
+  }
+}
