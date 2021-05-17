@@ -26,5 +26,8 @@
   },
   "devDependencies": {
     "ava": "^3.15.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
