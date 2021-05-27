@@ -18,7 +18,8 @@
     "./index.js"
   ],
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "lint": ""
   },
   "dependencies": {
     "diacritic": "^0.0.2",
