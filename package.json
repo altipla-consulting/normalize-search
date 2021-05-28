@@ -19,16 +19,16 @@
   ],
   "scripts": {
     "test": "ava",
-    "lint": ""
+    "lint": "eslint *.js",
+    "fix": "eslint --fix *.js"
   },
   "dependencies": {
     "diacritic": "^0.0.2",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
-    "ava": "^3.15.0"
-  },
-  "publishConfig": {
-    "access": "public"
+    "@altipla/eslint-config-vue": "^0.2.4",
+    "ava": "^3.15.0",
+    "eslint": "^7.27.0"
   }
 }

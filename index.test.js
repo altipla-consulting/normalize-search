@@ -14,8 +14,8 @@ test('normalize arrays', t => {
 
 test('prepare items and filter them', t => {
   let items = [
-    {name: 'foo', lastName: 'bar'},
-    {name: 'baz', lastName: 'qux'},
+    { name: 'foo', lastName: 'bar' },
+    { name: 'baz', lastName: 'qux' },
   ]
   items.forEach(item => {
     prepareSearch(item, [

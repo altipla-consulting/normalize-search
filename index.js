@@ -3,7 +3,7 @@ import { isArray, constant } from 'lodash-es'
 import diacritic from 'diacritic'
 
 
-let cache = new WeakMap();
+let cache = new WeakMap()
 
 
 export function normalizeSearch(input) {
