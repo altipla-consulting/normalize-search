@@ -15,12 +15,12 @@
   },
   "homepage": "https://github.com/altipla-consulting/normalize-search#readme",
   "files": [
-    "./index.js"
+    "./src/index.js"
   ],
   "scripts": {
     "test": "ava",
-    "lint": "eslint *.js",
-    "fix": "eslint --fix *.js"
+    "lint": "eslint --ext .js src",
+    "fix": "eslint --fix --ext .js src"
   },
   "dependencies": {
     "diacritic": "^0.0.2",
