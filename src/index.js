@@ -3,9 +3,6 @@ import { isArray, constant } from 'lodash-es'
 import diacritic from 'diacritic'
 
 
-let cache = new WeakMap()
-
-
 export function normalizeSearch(input) {
   if (isArray(input)) {
     input = input.join(' ')
@@ -15,7 +12,7 @@ export function normalizeSearch(input) {
 
 
 export function prepareSearch(item, search) {
-  cache.set(item, normalizeSearch(search))
+  item.$$search = normalizeSearch(search)
 }
 
 
@@ -27,7 +24,7 @@ export function filterSearch(search) {
   search = normalizeSearch(search)
 
   return function(item) {
-    let text = cache.get(item) || ''
+    let text = item.$$search || ''
     return text.includes(search)
   }
 }
