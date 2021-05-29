@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/altipla-consulting/normalize-search#readme",
   "files": [
-    "./src/index.js"
+    "src/index.js"
   ],
   "scripts": {
     "test": "ava",
