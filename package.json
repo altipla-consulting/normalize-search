@@ -15,9 +15,11 @@
   },
   "homepage": "https://github.com/altipla-consulting/normalize-search#readme",
   "files": [
-    "src/index.js"
+    "src/index.js",
+    "dist/*"
   ],
   "scripts": {
+    "lib": "npx rollup --input src/index.js --format iife --output.name normalizeSearch --output.file dist/normalize-search.bundle.js --plugin @rollup/plugin-commonjs --plugin @rollup/plugin-node-resolve --plugin rollup-plugin-uglify",
     "test": "ava",
     "lint": "eslint --ext .js src",
     "fix": "eslint --fix --ext .js src"
@@ -28,7 +30,12 @@
   },
   "devDependencies": {
     "@altipla/eslint-config-vue": "^0.2.4",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "ava": "^3.15.0",
-    "eslint": "^7.27.0"
+    "eslint": "^7.27.0",
+    "eslint-plugin-vue": "^7.13.0",
+    "rollup": "^2.53.1",
+    "rollup-plugin-uglify": "^6.0.4"
   }
 }
