@@ -1,11 +1,11 @@
 
-import { isArray, constant } from 'lodash-es'
+import { isArray, constant, flatten } from 'lodash-es'
 import diacritic from 'diacritic'
 
 
 export function normalizeSearch(input) {
   if (isArray(input)) {
-    input = input.join(' ')
+    input = flatten(input).join(' ')
   }
   return diacritic.clean(input).toUpperCase()
 }
